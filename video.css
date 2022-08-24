@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background: rgb(7, 7, 7);
+}
+.header ul{ 
+    text-align: center;
+}
+.header ul li{
+    display: inline-block;
+    margin-left: -5px;
+    padding: 30px 20px;
+}
+.header ul li a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    
+}
+.header ul li:hover{
+    background: rgb(218, 13, 13);
+}
+
+/* dropdown */
+
+.header ul li{
+    position: relative;
+}
+.header ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 200px;
+    background: rgb(3, 3, 3);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.header ul li ul li{
+    display: block;
+    border: 1px solid rgb(177, 176, 176);
+    border-left: none;
+    border-right: 0;
+    border-bottom: 0;
+    margin-left: 0;
+    padding: 10px 0;
+}
+.header ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+.header ul li ul li a{
+    display: block;
+ 
+}
+
+
+/* sub menu */
+
+.header ul ul li{
+    position: relative;
+}
+
+.header ul ul ul{
+    display: none;
+}
+.header ul ul ul li{
+    border-top: 0;
+    border-bottom: 1px solid rgb(160, 159, 159);
+}
+.header ul ul ul li:last-child{
+    border-bottom: 0;
+}
+
+.header ul ul li:hover > ul{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    left: 102%;
+    top: 0;
+}
+
+.icon{
+    padding: 100px 0;
+    text-align: center;
+}
+.icon i{
+    background: rgb(11, 191, 204);
+    border-radius: 50%;
+    font-size: 17px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.icon i:hover{
+    background: rgb(199, 136, 0);
+    cursor: pointer;
+    color: #fff;
+}
